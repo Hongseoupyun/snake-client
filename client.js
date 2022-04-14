@@ -1,4 +1,4 @@
-let connection;
+
 const net = require("net");
 
 
@@ -15,6 +15,7 @@ const connect = function() {
     console.log('Connected!');
     conn.write("Name: HSY");
     conn.write("Move: up");
+    conn.write("Say: Yeah")
     //setInterval(()=>{conn.write("Move: up")},50);
   });
   
